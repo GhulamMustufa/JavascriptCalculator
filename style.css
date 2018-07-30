@@ -1,0 +1,93 @@
+body{
+    margin: 0 auto;
+    width: 385px;
+}
+table{
+    border: 8px solid grey;
+    box-shadow: 20px 20px 15px lightgray;
+    border-radius: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: lightgray;
+}
+
+.user{
+    height: 85px;
+    width: 340px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #888888;
+    background: lightgreen;
+    font-size: 20px;
+}
+
+.btn{
+    width: 60px;
+    height: 50px;
+    font-size: 22px;
+    border-radius: 20px;
+    background: white;
+    font-weight: bold;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.btnor{
+    background: orangered;
+}
+
+.btn2{
+    width: 60px;
+    height: 35px;
+    font-size: 22px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+.btn1{
+    width: 130px;
+    height: 50px;
+    font-size: 22px;
+    border-radius: 20px;
+    background: white;
+    font-weight: bold;
+}
+
+#calName{
+    font-size: 38px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#calSun{
+    width: 120px;
+    height: 48px;
+    border-radius: 10px;
+    background-image: url("images/brown.jpg");
+}
+
+#calModel{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-style: italic;
+}
+
+#calc{
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+}
+
+#solar{
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}

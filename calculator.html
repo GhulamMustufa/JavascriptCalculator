@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js">
+        
+    </script>
+</head>
+
+<body>
+    <form>
+        <table cellspacing="10">
+            <br>
+            <tr>
+                <td id="calName" colspan="3">CASIO</td>
+                <td rowspan="2" colspan="2"> <input type="text" id="calSun" readonly> </td>
+            </tr>
+            <tr>
+                <td colspan="3" id="calModel">fx-570ES PLUS</td>
+            </tr>
+            <tr>
+                <td colspan="3" id="calc">NATURAL-V.P.A.M.</td>
+                <td colspan="2" id="solar">TWO WAY POWER</td>
+            </tr>
+            <tr>
+                <td colspan="5"> <input class="user" type="text" name="userinput" id="user" readonly> </td>
+            </tr>
+            <tr>
+                <td><input class="btn2" type="button" value="e" name="exponent" onclick="if (checkNum(this.form.user.value)) {doExponent(this.form)}"></td>
+                <td><input class="btn2" type="button" value="ln" name="logarithm" onclick="if (checkNum(this.form.user.value)) {doLn(this.form)}"></td>
+                <td><input class="btn2" type="button" value=" √a" name="sqroot" onclick="if (checkNum(this.form.user.value)) {doSqrt(this.form)}"></td>
+                <td><input class="btn2" type="button" value="y2" name="square" onclick="if (checkNum(this.form.user.value)) {doSq(this.form)}"></td>
+                <td><input class="btn2" type="button" value="y3" name="cube" onclick="if (checkNum(this.form.user.value)) {doCube(this.form)}"></td>
+            </tr>
+
+            <tr>
+                <td><input class="btn2" type="button" value="sin" name="sin" onclick="if (checkNum(this.form.user.value)) {doSin(this.form)}"></td>
+                <td><input class="btn2" type="button" value="cos" name="cos" onclick="if (checkNum(this.form.user.value)) {doCos(this.form)}"></td>
+                <td><input class="btn2" type="button" value=" tan" name="tan" onclick="if (checkNum(this.form.user.value)) {doTan(this.form)}"></td>
+                <td><input class="btn2" type="button" value="(" name="(" onclick="addDigit(this.form.user, '(')"></td>
+                <td><input class="btn2" type="button" value=")" name=")" onclick="addDigit(this.form.user, ')')"></td>
+            </tr>
+
+            <tr>
+                <td> <input class="btn" type="button" value="7" name="seven" onclick="addDigit(this.form.user, '7')"> </td>
+                <td> <input class="btn" type="button" value="8" name="eight" onclick="addDigit(this.form.user, '8')"> </td>
+                <td> <input class="btn" type="button" value="9" name="nine" onclick="addDigit(this.form.user, '9')"> </td>
+                <td> <input class="btn btnor" type="button" value="DEL" name="del" onclick="inpDel(this.form.user)"> </td>
+                <td> <input class="btn btnor" type="button" value="AC" name="ac" onclick="this.form.user.value = 0"> </td>
+            </tr>
+            <tr>
+                <td> <input class="btn" type="button" value="4" name="four" onclick="addDigit(this.form.user, '4')"> </td>
+                <td> <input class="btn" type="button" value="5" name="five" onclick="addDigit(this.form.user, '5')"> </td>
+                <td> <input class="btn" type="button" value="6" name="six" onclick="addDigit(this.form.user, '6')"> </td>
+                <td> <input class="btn" type="button" value="x" name="mul" onclick="addDigit(this.form.user, '*')"> </td>
+                <td> <input class="btn" type="button" value="÷" name="div" onclick="addDigit(this.form.user, '/')"> </td>
+            </tr>
+            <tr>
+                <td> <input class="btn" type="button" value="1" name="one" onclick="addDigit(this.form.user, '1')"> </td>
+                <td> <input class="btn" type="button" value="2" name="two" onclick="addDigit(this.form.user, '2')"> </td>
+                <td> <input class="btn" type="button" value="3" name="three" onclick="addDigit(this.form.user, '3')"> </td>
+                <td> <input class="btn" type="button" value="+" name="plus" onclick="addDigit(this.form.user, '+')"> </td>
+                <td> <input class="btn" type="button" value="-" name="minus" onclick="addDigit(this.form.user, '-')"> </td>
+            </tr>
+            <tr>
+                <td> <input class="btn" type="button" value="0" name="zero" onclick="addDigit(this.form.user, '0')"> </td>
+                <td> <input class="btn" type="button" value="." name="decimal" onclick="addDigit(this.form.user, '.')"> </td>
+                <td> <input class="btn" type="button" value="±" name="signchange" onclick="PlusMinus(this.form.user)"> </td>
+                <td colspan="2"> <input class="btn1" type="button" value="=" name="equal" onclick="if (checkNum(this.form.user.value)) {compute(this.form)}">                    </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
